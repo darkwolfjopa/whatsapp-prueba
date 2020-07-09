@@ -95,13 +95,13 @@ body {
 }
 
 #container_contacto {
-    width: 40%;
+    width: 25%;
+    height: 80%;
+    margin-bottom: 4%;
+    margin-left: 3%;
 }
 
 #hexagon_externo {
-    width: 67%;
-    height: 90%;
-    margin-bottom: 5%;
     background-color: #34495e;
 }
 
@@ -124,4 +124,69 @@ a {
     bottom: 0px;
     top: 0px;
     z-index: 100;
+}
+
+@media only screen and (max-width: 1080px) {
+    #container_contacto {
+        height: 80%;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #container_contacto {
+        width: 40%;
+        height: 90%;
+    }
+    #container_logo {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #container_contacto {
+        width: 40%;
+        height: 80%;
+    }
+    #container_logo {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #container_content {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-around;
+    }
+    #container_logo {
+        width: 50%;
+        height: 90%;
+    }
+    #container_contacto {
+        width: 30%;
+        height: 100%;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #container_contacto {
+        width: 45%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #container_logo {
+        width: 60%;
+    }
+    #container_contacto {
+        width: 45%;
+        height: 100%;
+        margin-top: 5%;
+    }
 }
